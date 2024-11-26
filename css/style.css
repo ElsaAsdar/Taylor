@@ -6217,7 +6217,7 @@ a.close.disabled {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background: no-repeat 50% / 600% 600%;
+  background: no-repeat 6000% / 600% 600%;
 }
 
 .carousel-control-prev-icon {
