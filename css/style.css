@@ -193,9 +193,9 @@ button.btn {
     }
 }
 
-@media (min-width: 100px) {
+@media (min-width: 200px) {
     .top-header .logo a img {
-        width: 200px; 
+        width: 250px; 
     }
 }
 
@@ -256,85 +256,67 @@ button.btn {
 /**********************************/
 /********* Header Slider **********/
 /**********************************/
-.slick-prev,
-.slick-next {
-    width: 40px;
-    height: 40px;
-    z-index: 1;
-    opacity: 0;
-    transition: .5s;
-    background: #ffffff;
-}
-
-.slick-prev {
-    left: 55px;
-}
-
-.slick-next {
-    right: 55px;
-}
-
-.slick-slider:hover .slick-prev {
-    left: 15px;
-    opacity: 1;
-}
-
-.slick-slider:hover .slick-next {
-    right: 15px;
-    opacity: 1;
-}
-
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus {
-    color: #3F69AA;
-    background: #ffffff;
-}
-
-.slick-prev::before,
-.slick-next::before {
-    font-family: "FontAwesome";
-    font-size: 20px;
-    color: #3F69AA;
-}
-
-.slick-prev::before {
-    content: "\f104";
-}
-
-.slick-next::before {
-    content: "\f105";
-}
-
-.slick-dots li button:before {
-    color: #ffffff;
-    font-size: 15px;
-}
-
-.slick-dots li.slick-active button:before {
-    color: #353535;
-}
-
-.slick-dotted.slick-slider {
-    margin-bottom: 0;
-}
-
 .home-slider {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px 20px;
+}
+
+/* Kontainer untuk setiap item slider */
+.main-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1500px;
     width: 100%;
 }
 
-.home-slider .main-slider-item {
-    padding: 0 7.5px;
+/* Item slider */
+.main-slider-item {
+    display: flex;
+    flex-wrap: wrap; /* Supaya responsif */
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.home-slider .slick-dots {
-    bottom: 10px;
-}
-.home-slider img {
-    width: 1200px;
+/* Gambar di slider */
+.slider-image img {
+    width: 200%;
+    max-width: 400px; /* Maksimal ukuran gambar */
     height: auto;
+    border-radius: 10px;
+}
+
+/* Teks penjelasan */
+.banner-text {
+    flex: 300;
+    padding: 150px 150px;
+    text-align: left; /* Menjaga teks tetap rata kiri */
+}
+
+/* Judul teks */
+.banner-text h2 {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Paragraf penjelasan */
+.banner-text p {
+    font-size: 20px;
+    color: #555;
+    line-height: 2;
+
+}
+
+.btn-learn-more:hover {
+    background-color: #0056b3;
 }
 
 
@@ -380,7 +362,7 @@ button.btn {
 .category .category-img {
     position: relative;
     overflow: hidden;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .category .category-img img {
