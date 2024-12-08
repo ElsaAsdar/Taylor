@@ -348,9 +348,9 @@ button.btn {
     background: #ffffff;
 }
 
-@media (max-width: 10px) {
+@media (max-width: 1500px) {
     .category {
-        padding: 50px 20px 50px 20px;
+        padding: 100px 200px 100px 200px;
     }
 }
 
@@ -1608,64 +1608,87 @@ button.btn {
 
 
 /**********************************/
-/****** Register & Login CSS ******/
-/**********************************/
-.login {
-    position: relative;
-    padding: 60px 0;
-}
-
-
-
-/**********************************/
 /********** Footer CSS ************/
 /**********************************/
+.social {
+    display: flex;
+    gap: 10px; 
+    justify-content: center; 
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.social a {
+    text-decoration: none;
+    color: #fff; 
+    background-color: #3F69AA 
+    border-radius: 50%;
+    width: 40px; 
+    height:10px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transition: all 0.3s ease; 
+}
+
+
+.social a:hover {
+    background-color: #007bff; 
+    color: #fff;
+    transform: scale(1.1); 
+}
+
+
+.social a i {
+    font-size: 20px; 
+}
+
+
 .footer {
-    background-color: #3F69AA;
-    padding: 20px 0;
-    color: #f8f7f7;
-    font-size: 14px;
+    background-color: #3F69AA; 
+    color: #fff; 
+    padding: 40px 0;
+    font-size: 14px; 
 }
 
-.footer h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #fdfbfb;
-}
-
-.footer p {
-    margin: 0 0 10px;
-    line-height: 1.6;
-}
-
-.footer .fa {
-    margin-right: 8px;
-    color: #f4f6f9;
-}
 
 .footer .container {
-    max-width: 10000px;
-    margin: 0 auto;
+    max-width: 12000px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
 }
 
-.footer .row {
-    margin: 0;
+
+.footer .row .col-md-6 {
+    margin-bottom: 5px; 
 }
+
+
+.footer h3 {
+    font-size: 20px; 
+    margin-bottom: 15px; 
+    color: #f4f4f4; 
+}
+
+
+.footer p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+.footer .fa {
+    margin-right: 10px; 
+    color: #f7f9fa; 
+}
+
 
 .footer .text-center {
-    text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
+    font-size: 15px; 
+    color: #f9fafa; 
 }
-
-.footer a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
-
 
 
 /**********************************/
